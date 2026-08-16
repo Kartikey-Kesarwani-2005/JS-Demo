@@ -1,4 +1,4 @@
-const accountId = 123456789;
+const accountId = 123456789;  // Always use const for variables that should not be reassigned.
 let accountName = "John Doe";
 let accountBalance = 1000.50; 
 accountNominee = "Doe";
