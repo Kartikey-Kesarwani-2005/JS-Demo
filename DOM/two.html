@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM By Kartikey</title>
+</head>
+<body style="background-color: aqua;">
+    <div class="week">
+        <div class="days">Monday</div>
+        <div class="days">Tuesday</div>
+        <div class="days">Wednesday</div>
+        <div class="days">Thursday</div>
+        <div class="days">Friday</div>
+        <div class="days">Saturday</div>
+        <div class="days">Sunday</div>
+    </div>
+    
+</body>
+<script>
+        const parent = document.querySelector(".week")
+        // console.log(parent);
+        // console.log(parent.children);
+        // console.log(parent.children[6].innerText);
+        for (let i= 0; i < parent.children.length; i++) {
+            console.log(parent.children[i].innerText);
+            
+        }
+        parent.children[1].style.color="red"
+        // console.log(parent.firstElementChild)
+        // console.log(parent.lastElementChild)
+
+
+        const day = document.querySelector(".days")
+        // console.log(day)
+        // console.log(day.parentElement)
+        // console.log(day.nextElementSibling)
+
+        console.log("Node : ", parent.childNodes)
+    </script>
+</html>
